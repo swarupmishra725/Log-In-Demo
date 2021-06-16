@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -20,6 +21,8 @@ public class MainActivity extends AppCompatActivity {
         Log.i("User Name",nameUsernameText.getText().toString());
 
         Log.i("Password",namePasswordText.getText().toString());
+
+        Toast.makeText(this, "Logged In Sucessfully",Toast.LENGTH_SHORT).show();
 
     }
 
